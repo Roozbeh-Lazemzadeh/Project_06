@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./app.js" defer></script>
+    <script src="https://kit.fontawesome.com/5e57d0bc99.js" crossorigin="anonymous"></script>
+    <title>Guess the Number</title>
+</head>
+
+<body>
+
+    <section class="wish-to-play">
+
+        <h3>Guess <br> the <br> Number</h3>
+
+        <div id="game_levels">
+            <button type="submit" class="game_btn" id="level_easy">
+                <span>EASY</span>
+                <span>1-20</span>
+            </button>
+            <button type="submit" class="game_btn" id="level_medium">
+                <span>MEDIUM</span>
+                <span>1-30</span>
+            </button>
+            <button type="submit" class="game_btn" id="level_hard">
+                <span>HARD</span>
+                <span>1-50</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="game" class="hidden">
+
+        <img src="./magic.gif" alt="">
+        <div id="turns"> </div>
+        <h1 id="title"></h1>
+
+        <input type="number" id="numInput">
+
+        <h2 id="feedback"></h2>
+
+        <div id="result" class="hidden">
+            <p id="resultIcon"> </p>
+            <p id="resultText"> </p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
